@@ -197,26 +197,6 @@ public class Transform extends Rectangle
 		this.y += transform.y * multiplier;
 		this.x += transform.x * multiplier;
 		
-	
-		//implementaçao do limite do level q tem q ser mudada
-		if(this.owner != null && this.owner.equals(GameResources.Player))
-		{
-			if( 
-				this.x < GameResources.Level.getLeftLimit()
-				|| this.x + this.width > GameResources.Level.getRightLimit()
-				|| this.y < 0
-				|| this.y + this.height > GameResources.Camera.viewportHeight
-				|| this.x < GameResources.LocalLeftLimit && GameResources.LockingObjects.size()> 0
-				|| this.x + this.width > GameResources.LocalRightLimit && GameResources.LockingObjects.size() > 0
-				
-			)
-			{
-				this.y = yprevious;
-				this.x = xprevious;
-				return this;
-			}
-		}
-	
 		return this;
 	}
 	public Transform Copy()

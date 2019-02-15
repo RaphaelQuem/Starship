@@ -8,7 +8,7 @@ import com.badlogic.gdx.math.*;
 import com.TiltLoop.StarShip.Base.*;
 import com.TiltLoop.StarShip.State.*;
 import com.badlogic.gdx.scenes.scene2d.*;
-import com.thousandeyes.TheLeak.State.Player.*;
+
 
 
 public class Player extends GameObject
@@ -21,7 +21,7 @@ public class Player extends GameObject
 		this.setSpeed(5f);
 		this.setTransform ( _transform);
 		this.getTransform().setOwner(this);
-		this.setState( new PlayerIdleState(this));
+		this.setState( new PlayerDefaultState());
 		
 	}
 

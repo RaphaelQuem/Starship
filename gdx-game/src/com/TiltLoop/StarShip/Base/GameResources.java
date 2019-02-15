@@ -3,11 +3,10 @@ import java.util.*;
 import com.badlogic.gdx.graphics.*;
 import com.badlogic.gdx.graphics.glutils.*;
 import com.badlogic.gdx.graphics.g2d.*;
-import com.thousandeyes.TheLeak.Entities.*;
 import com.badlogic.gdx.*;
-import com.thousandeyes.TheLeak.State.GameState.*;
-import com.thousandeyes.TheLeak.Base.Enums.*;
 import com.badlogic.gdx.utils.viewport.*;
+import com.TiltLoop.StarShip.Entities.*;
+import com.TiltLoop.StarShip.GameState.*;
 
 public class GameResources
 {
@@ -47,7 +46,7 @@ public class GameResources
 	{
 		GameResources.ShakeTime= time;
 	}
-	public static Level Level;
+	/*public static Level Level;
 	public static Level Level1()
 	{
 		Level level = new Level(); 
@@ -85,8 +84,8 @@ public class GameResources
 			new SpawnTrigger
 			(
 				1300,100f,
-				new EnemySpawn(2, EnemyEnum.Default,true)/*,
-				new EnemySpawn(3, EnemyEnum.DataScavenger,false)*/
+				new EnemySpawn(2, EnemyEnum.Default,true),
+				new EnemySpawn(3, EnemyEnum.DataScavenger,false)
 						
 			),
 			new SpawnTrigger
@@ -111,7 +110,7 @@ public class GameResources
 		return level;
 	};
 
-
+*/
 
 	//MODIFIERS INITIALIZES TO THE DEFAULT VALUES(NORMAL DIFICULTY)
 	public static int MDamage=5;

@@ -56,6 +56,7 @@ public abstract class GameObject  implements Comparable<GameObject>, Disposable 
 	public void setState (BaseState _state)
 	{
 		this.state = _state;
+		_state.setGameObject(this);
 	};
 	
 	public void setFlipped(boolean _flipped)

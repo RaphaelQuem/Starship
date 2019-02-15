@@ -7,8 +7,19 @@ import com.badlogic.gdx.*;
 public class BaseState
 {
 	private float stateTime=0f;
+	private GameObject gameObject;
 	private List<Transform> colliders= new ArrayList<Transform>();
 	private List<GameObject> triggeredObjects = new ArrayList<GameObject>();
+
+	public void setGameObject(GameObject gameObject)
+	{
+		this.gameObject = gameObject;
+	}
+
+	public GameObject getGameObject()
+	{
+		return gameObject;
+	}
 
 	public void setColliders(List<Transform> colliders)
 	{
@@ -44,9 +55,9 @@ public class BaseState
 	}
 
 
-	public String getName(){return "ISate";};
+	public String getName(){return "BaseSate";};
 	public Animation getStateAnimation(){return AnimationHelper.GetAnimationFromSpritesheet("hero-attack3-spritesheet.png",3,1,0.1f);};
-	public GameObject getGameObject(){return null;};
+
 	public void onTriggerEnter(Transform other){};
 	public void Update()
 	{
