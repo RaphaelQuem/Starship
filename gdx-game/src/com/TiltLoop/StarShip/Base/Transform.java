@@ -18,7 +18,15 @@ public class Transform extends Rectangle
 	private List<GameObject> collisions =  new ArrayList<GameObject>();
 	private boolean trigger = false;
 
+	public void addX(float x)
+	{
+		this.x += x;
+	}
 
+	public void addY(float y)
+	{
+		this.y += y;
+	}
 	public void setMultiplier(float multiplier)
 	{
 		this.multiplier = multiplier;
@@ -62,11 +70,7 @@ public class Transform extends Rectangle
 	public void setOwner(GameObject _owner){
 		this.owner = _owner;
 	}
-	public Transform addX(float _x)
-	{
-		this.x += _x;
-		return this;
-	}
+	
 	
 	
 	public Transform(float _x, float _y, float heightPct,float ratio, float _canvasWPct,float _canvasHPct){

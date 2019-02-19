@@ -114,7 +114,7 @@ public abstract class GameObject  implements Comparable<GameObject>, Disposable 
 	
 	public Transform getCollider()
 	{
-		if( this.getState().getStateAnimation()== null || this.getState().getColliders().size()==0)
+		if( this.getState() == null || this.getState().getStateAnimation()== null || this.getState().getColliders().size()==0)
 			return new Transform();
 	
 		

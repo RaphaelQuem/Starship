@@ -1,6 +1,7 @@
 package com.TiltLoop.StarShip.State;
 import com.TiltLoop.StarShip.Base.*;
 import com.badlogic.gdx.*;
+import com.TiltLoop.StarShip.Entities.*;
 
 public class PlayerDefaultState extends BaseState
 {
@@ -14,8 +15,10 @@ public class PlayerDefaultState extends BaseState
 	public void Update()
 	{
 		if(Gdx.input.isTouched())
+		{
+			GameResources.CreateObjects.add(new Shot(getGameObject().getTransform().getX(), getGameObject().getTransform().getY()));
 			super.getGameObject().getTransform().setCenter( Gdx.input.getX(),Gdx.input.getY());
-		
+		}
 		
 		
 		
