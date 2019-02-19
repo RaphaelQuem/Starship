@@ -8,8 +8,14 @@ public class BaseState
 {
 	private float stateTime=0f;
 	private GameObject gameObject;
+	private Animation stateAnimation;
 	private List<Transform> colliders= new ArrayList<Transform>();
 	private List<GameObject> triggeredObjects = new ArrayList<GameObject>();
+
+	public void setStateAnimation(Animation stateAnimation)
+	{
+		this.stateAnimation = stateAnimation;
+	}
 
 	public void setGameObject(GameObject gameObject)
 	{
@@ -56,7 +62,7 @@ public class BaseState
 
 
 	public String getName(){return "BaseSate";};
-	public Animation getStateAnimation(){return AnimationHelper.GetAnimationFromSpritesheet("hero-attack3-spritesheet.png",3,1,0.1f);};
+	public Animation getStateAnimation(){return AnimationHelper.GetAnimationFromSpritesheet("starship.png",1,1,0.1f);};
 
 	public void onTriggerEnter(Transform other){};
 	public void Update()

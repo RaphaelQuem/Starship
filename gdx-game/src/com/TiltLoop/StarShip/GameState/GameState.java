@@ -11,7 +11,7 @@ public class GameState
 	public List<Touchable> Touchables;
 	public void UpdateUi()
 	{
-		if(GameResources.HudCamera == null)
+		/*if(GameResources.HudCamera == null)
 		{
 			GameResources.HudCamera = new OrthographicCamera(1280f, 720f);
 			GameResources.HudCamera.position.set(1280f/2f,720f/2f,10f);
@@ -27,6 +27,6 @@ public class GameState
 		}
 		
 		
-		GameResources.HudBatch.end();
+		GameResources.HudBatch.end();*/
 	}
 }

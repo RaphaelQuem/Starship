@@ -78,8 +78,8 @@ public class Transform extends Rectangle
 		this.height = (GameResources.Camera.viewportHeight/100f*heightPct)/100f*_canvasHPct;
 		this.width = this.height * ratio;
 	
-		this.height = this.height/ 100f * _canvasHPct;
-		this.width = this.width/100f*_canvasWPct;
+		//this.height = this.height/ 100f * _canvasHPct;
+		//this.width = this.width/100f*_canvasWPct;
 		
 		this.canvasWPct = _canvasWPct;
 		this.canvasHPct = _canvasHPct;

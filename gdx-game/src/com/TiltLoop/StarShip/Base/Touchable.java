@@ -44,7 +44,7 @@ public class Touchable extends Transform
 		
 		Vector3 touchPoint = new Vector3(); 
 		if(event == "") return; 
-			InputHandler.Touches = InputHandler.Touches.replace("|" + event,"").replace(event,"");
+			//InputHandler.Touches = InputHandler.Touches.replace("|" + event,"").replace(event,"");
 		int touched = 5;
 		for (int i=0; i<5; i++){
 			if (!Gdx.input.isTouched(i))
@@ -54,7 +54,7 @@ public class Touchable extends Transform
 			}
 			GameResources.HudCamera.unproject(touchPoint.set(Gdx.input.getX(i), Gdx.input.getY(i), 0));
 			
-			
+			/*
 			if (rect.contains(touchPoint.x , touchPoint.y)  ){
 				if(!InputHandler.LastTouches.contains(event))
 				{
@@ -65,14 +65,14 @@ public class Touchable extends Transform
 			{
 				InputHandler.LastTouches = InputHandler.LastTouches.replace("|" + event,"").replace(event,"");
 				InputHandler.Touches = InputHandler.Touches.replace("|" + event,"").replace(event,"");
-			}
-		}
+			}*/
+		}/*
 		if(touched== 0)
 		{
 			InputHandler.LastTouches = InputHandler.LastTouches.replace("|" + event,"").replace(event,"");
 			InputHandler.Touches = InputHandler.Touches.replace("|" + event,"").replace(event,"");
 			
-		}
+		}*/
 	}
 	
 	
