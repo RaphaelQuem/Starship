@@ -11,7 +11,7 @@ public class Shot extends GameObject
 	{
 		animation = AnimationHelper.GetAnimationFromSpritesheet("shot-round-red.png",1,1,0.1f);
 		
-		super.setTransform(new Transform(x,y,5,1,100,100));
+		super.setTransform(new Transform(x,y,5));
 	}
 
 	@Override

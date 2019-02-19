@@ -70,8 +70,14 @@ public class Transform extends Rectangle
 	public void setOwner(GameObject _owner){
 		this.owner = _owner;
 	}
-	
-	
+	public Transform (float _x, float _y , float _heightPct)
+	{
+		this.x = _x;
+		this.y = _y;
+		this.screenHeightPercentage = _heightPct;
+
+		float ratio = GameResources.Camera.viewportHeight / GameResources.Camera.viewportWidth;
+	}
 	
 	public Transform(float _x, float _y, float heightPct,float ratio, float _canvasWPct,float _canvasHPct){
 		this.x = _x;
